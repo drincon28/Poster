@@ -3421,6 +3421,7 @@ input, select, textarea {
 
 		#banner h1 {
 			font-size: 11em;
+			line-height: 1em;
 		}
 		#banner h2 {
 			font-size: 2em;

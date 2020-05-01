@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #232842;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -181,7 +181,6 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -280,7 +279,7 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 3em 0;
+			margin: 0em 0;
 		}
 
 	.align-left {
@@ -1787,7 +1786,7 @@ input, select, textarea {
 				background-color: #ffffff;
 				display: block;
 				height: 2px;
-				margin: 0.325em 0 0.5em 0;
+				/*margin: 0.325em 0 0.5em 0;*/
 				width: 100%;
 			}
 
@@ -3385,19 +3384,17 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 0 0 0 0 ;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
-		margin-bottom: -3.25em;
-		max-height: 32em;
-		min-height: 22em;
+		height: 50vh;
+		max-height: 50vh;
+		min-height: 50vh;
 		position: relative;
-		top: -3.25em;
 	}
 
 		#banner:after {
@@ -3423,9 +3420,29 @@ input, select, textarea {
 		}
 
 		#banner h1 {
-			font-size: 3.25em;
+			font-size: 11em;
+		}
+		#banner h2 {
+			font-size: 2em;
 		}
 
+		#banner > .inner > .inner1 {
+				float: left;
+				width: 70%;
+				height:100%;
+			}
+		#banner > .inner > .inner2 {
+			float: right;
+			width: 30%;
+			background-color: #FFFFFF;
+			color: #232842; 
+			height:100%;
+			padding: 1em 1em 1em 1em;
+		}
+		#banner > .inner > .inner2 > .cont{
+			width:fit-content;
+			margin: 0px auto;
+		}
 		#banner > .inner {
 			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
 			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
@@ -3434,8 +3451,17 @@ input, select, textarea {
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			width: 100%;
+			display: flex;
 		}
 
+		#banner > .inner:after {
+			content: "";
+			display: table;
+			clear: both;
+		  }
+
+		
 			#banner > .inner .image {
 				display: none;
 			}
@@ -3461,7 +3487,7 @@ input, select, textarea {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				margin: 0 0 2em 0;
+				margin: 0 0 0em 0;
 			}
 
 				#banner > .inner .content > * {
@@ -3481,9 +3507,9 @@ input, select, textarea {
 				}
 
 		#banner.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
+			height: 100vh;
+			min-height: 50vh;
+			max-height: 50vh;
 		}
 
 			#banner.major.alt {
@@ -3747,7 +3773,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-		padding-top: 3.25em;
+	 	/*padding-top: 3.25em;*/
 	}
 
 		#wrapper.is-transitioning {
@@ -3755,17 +3781,18 @@ input, select, textarea {
 		}
 
 		#wrapper > * > .inner {
-			padding: 4em 0 2em 0 ;
+			/*padding: 4em 0 2em 0 ;*/
 			margin: 0 auto;
-			max-width: 65em;
-			width: calc(100% - 6em);
+			height: 100%;
+			/*max-width: 65em;*/
+			/*width: calc(100% - 6em);*/
 		}
 
 			@media screen and (max-width: 736px) {
 
 				#wrapper > * > .inner {
-					padding: 3em 0 1em 0 ;
-					width: calc(100% - 3em);
+					padding: 1em 0 1em 0 ;
+					width: calc(100% - 1em);
 				}
 
 			}

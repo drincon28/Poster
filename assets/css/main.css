@@ -3372,6 +3372,49 @@ input, select, textarea {
 
 		}
 
+/*WRC classes*/
+
+.logos{
+	float: left;
+	width: 25%;
+}
+.logos > img{
+   max-width: 100%;
+   
+   height: auto;
+}
+
+.qrcode{
+	float:right;
+	padding: 1em 10em 1em 1em;
+}
+.qrcode> img{
+	width: 150px;
+		height: 150px;
+}
+#footerqr{
+	height: 30vh;
+	max-height: 30vh;
+	min-height: 30vh;
+	background-color: #07072F;
+}
+.footertext{
+	float:left;
+	color:#FFFFFF;
+	display: block;
+	width: 600px;
+	text-align: center;
+}
+
+#logos{
+	height: 25vh;
+	max-height: 25vh;
+	min-height: 240px;
+	background-color: #FFFFFF;
+	width: 100%;
+}
+
+
 /* Banner */
 
 	#banner {
@@ -3407,7 +3450,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #07072F;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3436,7 +3479,7 @@ input, select, textarea {
 			float: right;
 			width: 30%;
 			background-color: #FFFFFF;
-			color: #232842;
+			color: #07072F;
 			height:100%;
 			padding: 1em 1em 1em 1em;
 		}
@@ -3733,6 +3776,10 @@ input, select, textarea {
 		}
 
 /* Footer */
+#footer {
+	height: 50hv;
+}
+
 
 	#footer .copyright {
 		font-size: 0.8em;

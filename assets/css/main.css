@@ -3434,36 +3434,28 @@ input, select, textarea {
 	background-color: #FFFFFF;
 }
 .definitions{
-	margin:1em 1em 1em 1em;
-	width: 30%;
-	height: 33vh;
-	max-height: 33vh;
-	min-height: 33vh;
+	/*margin:1em 1em 1em 1em;*/
+	width: 33%;
 	float:left;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 }
 .definitions > img{
 	margin-left: 20px;
 	width: 80%;
-	height: 60vh;
-	max-height: 60vh;
-	min-height: 60vh;
 	float:left;
 }
 
 .titlestext{
-	max-height: 8vh;
-	min-height: 8vh;
+	max-height: 10vh;
+	min-height: 10vh;
 	text-align: center;
 	background-color: #FFFFFF;
 	Color:#49B1E8;
 	z-index:-1;
 }
 .context{
-	height: 50vh;
-	max-height: 50vh;
-	min-height: 50vh;
 	background-color: #FFFFFF;
+	overflow: hidden;
 }
 .figureText{
 	background-color: #07072F;

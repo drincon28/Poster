@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: rgba(0, 0, 0, 0);
+		background-color: #FFFFFF;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -196,7 +196,7 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 2.5em;
 	}
 
 	h3 {
@@ -3433,7 +3433,56 @@ input, select, textarea {
 	height: 100vh;
 	background-color: #FFFFFF;
 }
+.definitions{
+	margin:1em 1em 1em 1em;
+	width: 30%;
+	height: 33vh;
+	max-height: 33vh;
+	min-height: 33vh;
+	float:left;
+	padding-left: 20px;
+}
+.definitions > img{
+	margin-left: 20px;
+	width: 80%;
+	height: 60vh;
+	max-height: 60vh;
+	min-height: 60vh;
+	float:left;
+}
 
+.titlestext{
+	max-height: 8vh;
+	min-height: 8vh;
+	text-align: center;
+	background-color: #FFFFFF;
+	Color:#49B1E8;
+	z-index:-1;
+}
+.context{
+	height: 50vh;
+	max-height: 50vh;
+	min-height: 50vh;
+	background-color: #FFFFFF;
+}
+.figureText{
+	background-color: #07072F;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+		width: 40px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5em;
+		
+}
+figcaption{
+	padding-left: 40px !important; 
+}
 
 /*cards*/
 
@@ -3442,6 +3491,7 @@ input, select, textarea {
 	width: 25%;
 	height: 100%;
 	float:left;
+	padding: 5px 5px 5px 5px;
 }
 .card .image {
     width: 100%;
@@ -3744,7 +3794,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #07072F;
 	}
 
 		#main > * {

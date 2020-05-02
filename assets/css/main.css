@@ -3404,6 +3404,7 @@ input, select, textarea {
 	display: block;
 	width: 600px;
 	text-align: center;
+	font-size: .85em;
 }
 
 #logos{
@@ -3413,8 +3414,84 @@ input, select, textarea {
 	background-color: #FFFFFF;
 	width: 100%;
 }
+#showcase{
+	height: 40vh;
+	max-height: 40vh;
+	min-height: 40vh;
+	background-color: #FFFFFF;
+	background-image: url(../../images/sheet_background.png);
+	padding:.5em .5em .5em .5em;
+  }
+
+.logosHeader{
+	background-color: #07072F;	
+}
+.methodology{
+	height: 100vh;
+	background-color: #FFFFFF;
+}
 
 
+/*cards*/
+
+.card {
+/*   transform: translate(-50%,-50%);*/
+	width: 25%;
+	height: 100%;
+	float:left;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+	float :left;
+}
+.card .image img {
+    width: 100%;
+    height: 250px;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(10%);/*100%*/
+}
+.card .details {
+	position: relative;
+    top: 0;
+    left: 0;
+	width: 100%;/*100%*/
+	height: 100%;
+    
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(500px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+	background-color: #f59c16;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: rgb(41, 0, 223);;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+	font-weight: bold;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+	color: #FFFFFF;
+	font-weight: bold;
+}
 /* Banner */
 
 	#banner {
@@ -3434,9 +3511,9 @@ input, select, textarea {
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 50vh;
-		max-height: 50vh;
-		min-height: 50vh;
+		height: 60vh;
+		max-height: 60vh;
+		min-height: 60vh;
 		position: relative;
 	}
 
@@ -3463,27 +3540,32 @@ input, select, textarea {
 		}
 
 		#banner h1 {
-			font-size: 11em;
+			font-size: 9em;
 			line-height: 1em;
 		}
 		#banner h2 {
 			font-size: 2em;
 		}
 
-		#banner > .inner > .inner1 {
+		#banner > .inner > .header1 {
 				float: left;
-				width: 70%;
+				width: 60%;
 				height:100%;
 			}
-		#banner > .inner > .inner2 {
-			float: right;
-			width: 30%;
-			background-color: #FFFFFF;
-			color: #07072F;
+			#banner > .inner > .header2 {
+				float: right;
+				width: 20%;
+				color: #FFFFFF;
+				height:100%;
+				padding: 1em 1em 1em 1em;
+			}
+			#banner > .inner > .header3 {
+				float: right;
+				width: 20%;
 			height:100%;
-			padding: 1em 1em 1em 1em;
-		}
-		#banner > .inner > .inner2 > .cont{
+				padding: 1em 1em 1em 1em;
+			}
+				#banner > .inner > .header2 > .cont{
 			width:fit-content;
 			margin: 0px auto;
 		}

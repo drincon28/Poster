@@ -112,7 +112,7 @@ body{
 }
 .logosBig:hover{
     transition: transform .2s;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 .logosBig > .logoContainer {
     width: 100%;
@@ -155,6 +155,7 @@ body{
     background: url(../images/sheet_background.png);
 
 }
+
 .centerDrum{
     position: relative;
     top: 300px;
@@ -168,6 +169,7 @@ body{
     -webkit-box-shadow: 2px 2px 2px 2px #ccc;
     box-shadow:         2px 2px 2px 2px #ccc;
 }
+
 .centerDrum > .centerContainer {
     width: 100%;
     height: 100%; 
@@ -187,17 +189,49 @@ body{
     border-radius: 50%;
 
 }
+.redBG{
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+}
 .box{
     outline-offset: -10px;
     outline: 0px solid #fff;
-    padding: 10px;
-    opacity: .7;
+    text-shadow: 1px 1px #000000;
 }
+.boxMask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .4;
+    z-index: 3;
+    border-radius: 5%;
+
+}
+.boxMask:hover{
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.boxText{
+    position: absolute;
+    display: table;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    text-align: center;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+
 .box:hover{
     outline: 3px solid #fff;
-    transition: transform .2s, outline 0.1s, opacity .2s;
     transform: scale(1.2);
     opacity: 1;
+    transition: transform .5s ease, outline 0.5s ease, opacity .5s ease;
+
 }
 .contextSection{
     position: absolute;
@@ -207,8 +241,8 @@ body{
     color: #FFFFFF;
     width: 250px;
     height: 350px;
-    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
-
+    background: url(../images/Dave_King_\(drummer\)-4.jpg);
+    background-size: cover;
 }
 .problemSection{
     position: absolute;
@@ -219,6 +253,8 @@ body{
     background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
     width: 250px;
     height: 250px;
+    background: url(../images/pic01-2.jpg);
+    background-size: cover;
 }
 .solutionSection{
     position: absolute;

@@ -63,7 +63,7 @@ body{
     position: absolute;
     top: 150px;
     left: 10px;
-    font-size: 20px;
+    font-size: 23px;
 }
 .headerAffils{
     float: left;
@@ -147,10 +147,12 @@ body{
     height: 100%;
 }
 .content{
-    width: 1000px;
+    width: 1024px;
     height: 1200px;
-    margin: 0px 12px 0px 12px;
+    margin: 0px 0px 0px 0px;
     position: relative;
+    background-color: #FFFFFF;
+    background: url(../images/sheet_background.png);
 
 }
 .centerDrum{
@@ -185,71 +187,74 @@ body{
     border-radius: 50%;
 
 }
+.box{
+    outline-offset: -10px;
+    outline: 0px solid #fff;
+    padding: 10px;
+    opacity: .7;
+}
+.box:hover{
+    outline: 3px solid #fff;
+    transition: transform .2s, outline 0.1s, opacity .2s;
+    transform: scale(1.2);
+    opacity: 1;
+}
 .contextSection{
     position: absolute;
     border-radius: 5%;
     top: 40px;
     left: 20px;
-    padding: 10px;
     color: #FFFFFF;
     width: 250px;
-    height: 250px;
-    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
-    outline: 0px solid #fff;
-    outline-offset: -10px;
+    height: 350px;
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
 
 }
-.contextSection:hover{
-    outline: 3px solid #fff;
-    transition: transform .2s, outline 0.1s;
-    transform: scale(1.2);
-}
-
 .problemSection{
     position: absolute;
     border-radius: 5%;
     top: 0;
     left: 370px;
-    background-color: #FFFFFF;
-    color: #07072F;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
     width: 250px;
     height: 250px;
 }
 .solutionSection{
     position: absolute;
     border-radius: 5%;
-    top: 100px;
+    top: 40px;
     left: 700px;
-    background-color: #FFFFFF;
-    color: #07072F;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
     width: 250px;
-    height: 250px;
+    height: 350px;
 }
 .multipadSection{
     position: absolute;
     top: 980px;
     left: 680px;
-    background-color: #FFFFFF;
-    color: #07072F;
-    width: 300px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    color: #FFFFFF;
+    width: 290px;
     height: 200px;
 }
 .definitionsSection{
     position: absolute;
     top: 980px;
     left: 20px;
-    background-color: #FFFFFF;
-    color: #07072F;
-    width: 300px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    color: #FFFFFF;
+    width: 290px;
     height: 200px;
 }
 .playerSection{
     position: absolute;
     top: 980px;
     left: 350px;
-    background-color: #FFFFFF;
-    color: #07072F;
-    width: 300px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    color: #FFFFFF;
+    width: 290px;
     height: 200px;
     
 }
@@ -257,8 +262,8 @@ body{
     position: absolute;
     top: 740px;
     left: 20px;
-    background-color: #FFFFFF;
-    color: #07072F;
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+    color: #FFFFFF;
     width: 960px;
     height: 200px;
 

@@ -38,7 +38,7 @@ body{
     width: 100%;
     height: 100%;
     background: url(../images/drumset-4865818_960_720.jpg);
-    opacity: 0.2;
+    opacity: 00.3;
     z-index: -1;
     background-attachment: scroll;
     background-position: center;
@@ -111,7 +111,7 @@ body{
     padding: 5px 5px 5px 5px;
 }
 .logosBig:hover{
-    transition: transform .2s;
+    transition: transform 0.3s;
     transform: scale(1.4);
 }
 .logosBig > .logoContainer {
@@ -148,12 +148,25 @@ body{
 }
 .content{
     width: 1024px;
-    height: 1200px;
+    height: 1150px;
     margin: 0px 0px 0px 0px;
     position: relative;
     background-color: #FFFFFF;
     background: url(../images/sheet_background.png);
-
+}
+.contentMiddle{
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    background-color: rgba(29, 29, 116, 0.8);
+    top:   400px;
+}
+.contentBottom{
+    position: absolute;
+    width: 100%;
+    height: 410px;
+    background-color:rgba(244,133,0,1);/* rgb(7, 7, 47, 1);*/
+    top:   740px;
 }
 
 .centerDrum{
@@ -190,12 +203,39 @@ body{
 
 }
 .redBG{
-    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+    background-color: rgba(241,39,17,0.5);
+    transition: all 0.3s ease-in;
 }
+.blueBG{
+    background-color: rgba(17,39,241,0.5);
+    transition: all 0.3s ease-in;
+}
+.orangeBG{
+    background-color: rgba(244,133,0,0.5);
+    transition: all 0.3s ease-in;
+}
+.whiteBG{
+    background-color: rgba(255,255,255,0.3);
+    transition: all 0.3s ease-in;
+}
+
+
 .box{
     outline-offset: -10px;
     outline: 0px solid #fff;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 2px 2px #000000;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    border-radius: inherit;
+}
+.box:hover{
+    outline: 3px solid #fff;
+    transform: scale(1.2);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 .boxMask{
     width: 100%;
@@ -203,43 +243,42 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
-    opacity: .4;
+    /*opacity: .7;*/
     z-index: 3;
-    border-radius: 5%;
+    border-radius: inherit;
+
+    /*-webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;*/
 
 }
 .boxMask:hover{
-    opacity: 0;
-    transition: opacity .5s ease;
+    background-color: rgba(100,100,100,0.4);
+    /*opacity: 0.3;*/
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 .boxText{
+    display: block;
     position: absolute;
-    display: table;
     top: 0px;
     left: 0px;
     padding: 10px;
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
-    text-align: center;
-    vertical-align: middle;
-    z-index: 2;
-}
-
-
-.box:hover{
-    outline: 3px solid #fff;
-    transform: scale(1.2);
-    opacity: 1;
-    transition: transform .5s ease, outline 0.5s ease, opacity .5s ease;
-
+    z-index: 3;
+    opacity: 1 !important;
 }
 .contextSection{
     position: absolute;
     border-radius: 5%;
-    top: 40px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
     color: #FFFFFF;
-    width: 250px;
+    width: 300px;
     height: 350px;
     background: url(../images/Dave_King_\(drummer\)-4.jpg);
     background-size: cover;
@@ -247,52 +286,45 @@ body{
 .problemSection{
     position: absolute;
     border-radius: 5%;
-    top: 0;
-    left: 370px;
+    top: 30px;
+    left: 365px;
     color: #FFFFFF;
+    text-shadow: 2px 2px rgb(53, 37, 37) !important;
     background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
-    width: 250px;
+    width: 300px;
     height: 250px;
-    background: url(../images/pic01-2.jpg);
+    background: url(../images/question.jpg);
     background-size: cover;
+    font-size: 30px;
 }
 .solutionSection{
     position: absolute;
     border-radius: 5%;
-    top: 40px;
+    top: 35px;
     left: 700px;
     color: #FFFFFF;
-    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
-    width: 250px;
+    background: url(../images/pic01-2.jpg);
+    background-size: cover;
+    width: 300px;
     height: 350px;
 }
-.multipadSection{
+.budgetSection{
     position: absolute;
-    top: 980px;
-    left: 680px;
-    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
-    color: #FFFFFF;
-    width: 290px;
+    top: 450px;
+    left: 800px;
+    width: 200px;
     height: 200px;
+    border-radius: 50%;
+    background-color: #FF0000;
 }
-.definitionsSection{
+.objetivesSection{
     position: absolute;
-    top: 980px;
-    left: 20px;
-    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
-    color: #FFFFFF;
-    width: 290px;
+    top: 450px;
+    left: 30px;
+    width: 255px;
     height: 200px;
-}
-.playerSection{
-    position: absolute;
-    top: 980px;
-    left: 350px;
-    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
-    color: #FFFFFF;
-    width: 290px;
-    height: 200px;
-    
+    border-radius: 5%;
+    background-color: #00FF00;
 }
 .methodologySection{
     position: absolute;
@@ -303,4 +335,40 @@ body{
     width: 960px;
     height: 200px;
 
+}
+.definitionsSection{
+    position: absolute;
+    top: 980px;
+    left: 20px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    color: #FFFFFF;
+    width: 290px;
+    height: 150px;
+    background: url(../images/http2.jpg);
+    background-size: cover;
+    border-radius: 5%;
+}
+.playerSection{
+    position: absolute;
+    top: 980px;
+    left: 350px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    color: #FFFFFF;
+    width: 290px;
+    height: 150px;
+    background: url(../images/player.jpg);
+    background-size: cover;
+    border-radius: 5%;
+}
+.multipadSection{
+    position: absolute;
+    top: 980px;
+    left: 680px;
+    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    color: #FFFFFF;
+    width: 290px;
+    height: 150px;
+    background: url(../images/multipad.jpg);
+    background-size: cover;
+    border-radius: 5%;
 }

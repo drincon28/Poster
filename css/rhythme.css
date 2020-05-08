@@ -190,7 +190,7 @@ body{
 .contentMiddle2{
     position: absolute;
     width: 100%;
-    height: 210px;
+    height: 230px;
     background-color: rgba(255,175,25,0.6);
     /*background-color: rgba(5, 119, 190,1);*/
     top:   700px;
@@ -198,10 +198,10 @@ body{
 .contentBottom{
     position: absolute;
     width: 100%;
-    height: 410px;
+    height: 390px;
     background-color: rgba(255,175,25,0.8);
     /*background-color:rgba(244,133,0,1);*//* rgb(7, 7, 47, 1);*/
-    top:   910px;
+    top:   930px;
 }
 
 .centerDrum{
@@ -238,7 +238,7 @@ body{
 
 }
 .redBG{
-    background-color: rgba(241,39,17,0.5);
+    background-color: rgba(255,100,17,0.9);
     transition: all 0.3s ease-in;
 }
 .blueBG{
@@ -307,6 +307,17 @@ body{
     z-index: 3;
     opacity: 1 !important;
 }
+.boxTitle{
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 3;
+    background-color: #FFFFFF;
+    padding: 4px;
+    color: rgb(255,100,17);
+    font-size: 12px;
+}
 .contextSection{
     position: absolute;
     border-radius: 5%;
@@ -329,7 +340,6 @@ body{
     top: 30px;
     left: 320px;
     color: #FFFFFF;
-    text-shadow: 2px 2px rgb(53, 37, 37) !important;
     width: 350px;
     height: 250px;
     background: url(../images/pic01.jpg);
@@ -356,74 +366,122 @@ body{
     width: 100px;
 
 }
-.budgetSection{
-    position: absolute;
-    top: 450px;
-    left: 800px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-}
-.objetivesSection{
+.objetiveMainSection{
     position: absolute;
     top: 450px;
     left: 30px;
     width: 255px;
     height: 200px;
     border-radius: 5%;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: rgba(255, 187, 0, 0.8);
+    font-size: 17px;
+
 }
-.timelineSection{
+.objetivesSection{
+    position: absolute;
+    top: 450px;
+    left: 730px;
+    width: 255px;
+    height: 200px;
+    border-radius: 5%;
+    color: #FFFFFF;
+    background-color: rgba(255, 187, 0, 0.8);
+    font-size: 12px;
+}
+.budgetSection{
     position: absolute;
     top: 710px;
     left: 20px;
     color: #FFFFFF;
-    width: 960px;
-    height: 200px;
+    width: 984px;
+    height: 20px;
+    background-color: #FFFFFF;
+    font-size: 15px;
 }
-.methodologySection{
+
+.budgetTitle{
+    float:left;
+    width:60px;
+    height: 100%;
+    background-color: rgb(190, 150, 8);
+}
+.DevStaff{
+    float:left;
+    width:calc(60% - 60px);
+    height: 100%;
+    background-color: rgb(190, 50, 8);
+}
+.TechStaff{
+    float:left;
+    width:25%;
+    height: 100%;
+    background-color: rgb(250, 70, 0);
+}
+.ArtStaff{
+    float:left;
+    height: 100%;
+    width:10%;
+    background-color: rgba(255,100,17,1);
+}
+.Hardware{
+    float:left;
+    height: 100%;
+    width:5%;
+    background-color: rgba(255,170,70,1);
+}
+.timelineSection{
     position: absolute;
-    top: 910px;
+    top: 740px;
     left: 20px;
     color: #FFFFFF;
-    width: 960px;
+    width: 984px;
+    height: 200px;
+}
+
+.methodologySection{
+    position: absolute;
+    top: 930px;
+    left: 20px;
+    color: #FFFFFF;
+    width: 984px;
     height: 200px;
 
 }
 .definitionsSection{
     position: absolute;
-    top: 1130px;
+    top: 1150px;
     left: 20px;
-    background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
+    /*color: rgb(250, 70, 0);*/
     color: #FFFFFF;
+    text-shadow: 1px 1px rgb(7, 0, 73);
     width: 290px;
     height: 150px;
-    background: url(../images/http2.jpg);
+    background: url(../images/www.jpg);
     background-size: cover;
     border-radius: 5%;
 }
 .playerSection{
     position: absolute;
-    top: 1130px;
-    left: 350px;
+    top: 1150px;
+    left: 367px;
     background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
     color: #FFFFFF;
     width: 290px;
     height: 150px;
-    background: url(../images/player.jpg);
+    background: url(../images/game-liike.png);
     background-size: cover;
     border-radius: 5%;
 }
 .multipadSection{
     position: absolute;
-    top: 1130px;
-    left: 680px;
+    top: 1150px;
+    left: 714px;
     background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
     color: #FFFFFF;
     width: 290px;
     height: 150px;
-    background: url(../images/multipad.jpg);
+    background: url(../images/octapad.png);
     background-size: cover;
     border-radius: 5%;
 }

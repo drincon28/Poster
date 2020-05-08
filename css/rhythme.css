@@ -3,6 +3,7 @@ body{
 	padding: 0;
 	border: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+    text-shadow: 1px 1px #000000;
 }
 
 .bodyContainer{
@@ -22,7 +23,8 @@ body{
 .headerBackground{
     width: 100%;
     height: 100%;
-    background-color: #07072F; 
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+    /*background-color: #07072F; */
 }
 .headerMask {
     width: 100%;
@@ -37,7 +39,7 @@ body{
     width: 100%;
     height: 100%;
     background: url(../images/drumset-4865818_960_720.jpg);
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
     background-attachment: scroll;
     background-position: center;
@@ -52,9 +54,9 @@ body{
     left: 0px;
     font-size: 120px;
     font-weight: bolder;
-    width: calc(100% - 150px);
+    width: calc(100% - 130px);
     border-bottom:2px #FFFFFF solid;
-    padding-left: 150px;
+    padding-left: 130px;
 }
 
 .headerText{
@@ -69,9 +71,14 @@ body{
 .headerAffils{
     float: left;
     position: absolute;
-    top: 70px;
-    left: 780px;
+    top: 23px;
+    left: 720px;
     font-size: 10px;
+}
+.mainAffils{
+    font-size: 13px;
+    border-bottom: 0px #FFFFFF solid;
+
 }
 .headerLogo{
     float: left;
@@ -92,7 +99,11 @@ body{
     height: 130px;
     position: relative;
     opacity: 0.99;
-    background-color: rgba(29, 29, 116, 0.9);
+    background-color: rgba(255,175,25,1);
+    /*background-color:rgba(244,133,0,1);*//* rgb(7, 7, 47, 1);*/
+    /*background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);*/
+    /*background-color: rgba(5, 119, 190,1);*/
+    /*background-color: rgba(29, 29, 116, 0.9);*/
 
 }
 
@@ -154,14 +165,25 @@ body{
     height: 1320px;
     margin: 0px 0px 0px 0px;
     position: relative;
-    background-color: #FFFFFF;
-    background: url(../images/sheet_background.png);
+    /*background-color: rgba(5, 119, 190,1);*/
+    /*background-color: #FFFFFF;*/
+    background: url(../images/background_Circuit.png);
+    background-size: contain;
+    /*background: url(../images/sheet_background.png);*/
+}
+.contentTop{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(255,175,25,0.2);
+    /*background-color: rgba(29, 29, 116, 0.8);*/
+    top:   0px;
 }
 .contentMiddle{
     position: absolute;
     width: 100%;
-    height: 310px;
-    background-color: rgba(5, 119, 190,1);
+    height: 300px;
+    background-color: rgba(255,175,25,0.4);
     /*background-color: rgba(29, 29, 116, 0.8);*/
     top:   400px;
 }
@@ -169,14 +191,16 @@ body{
     position: absolute;
     width: 100%;
     height: 210px;
-    background-color: rgba(5, 119, 190,1);
+    background-color: rgba(255,175,25,0.6);
+    /*background-color: rgba(5, 119, 190,1);*/
     top:   700px;
 }
 .contentBottom{
     position: absolute;
     width: 100%;
     height: 410px;
-    background-color:rgba(244,133,0,1);/* rgb(7, 7, 47, 1);*/
+    background-color: rgba(255,175,25,0.8);
+    /*background-color:rgba(244,133,0,1);*//* rgb(7, 7, 47, 1);*/
     top:   910px;
 }
 
@@ -234,7 +258,7 @@ body{
 .box{
     outline-offset: -10px;
     outline: 0px solid #fff;
-    text-shadow: 2px 2px #000000;
+    /*text-shadow: 2px 2px #000000;*/
     transform: scale(1);
     transition: transform 0.3s ease-out;
     border-radius: inherit;
@@ -289,22 +313,27 @@ body{
     top: 30px;
     left: 30px;
     color: #FFFFFF;
-    width: 300px;
-    height: 350px;
-    background: url(../images/Dave_King_\(drummer\)-4.jpg);
+    width: 250px;
+    height: 310px;
+    /*background: url(../images/Dave_King_\(drummer\)-4.jpg);*/
+    /*background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);*/
+
+    background-color: rgba(255,100,17,0.9);
+    /*background-color: rgba(255,39,17,0.9);*/
     background-size: cover;
+    font-size: 12px;
 }
 .problemSection{
     position: absolute;
     border-radius: 5%;
     top: 30px;
-    left: 365px;
+    left: 320px;
     color: #FFFFFF;
     text-shadow: 2px 2px rgb(53, 37, 37) !important;
-    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
-    width: 300px;
+    width: 350px;
     height: 250px;
-    background: url(../images/question.jpg);
+    background: url(../images/pic01.jpg);
+    /*background: url(../images/question.jpg);*/
     background-size: cover;
     font-size: 30px;
 }
@@ -314,10 +343,18 @@ body{
     top: 35px;
     left: 700px;
     color: #FFFFFF;
-    background: url(../images/pic01-2.jpg);
-    background-size: cover;
+    /*background-color: rgba(241,39,17,0.9);*/
+    background-color: rgba(255,100,17,0.9);
     width: 300px;
-    height: 350px;
+    height: 310px;
+    font-size: 12px;
+}
+.kidInTears{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    width: 100px;
+
 }
 .budgetSection{
     position: absolute;

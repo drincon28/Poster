@@ -1,7 +1,9 @@
+
 body{
     margin: 0;
 	padding: 0;
 	border: 0;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     text-shadow: 1px 1px #000000;
 }
@@ -71,9 +73,10 @@ body{
 .headerAffils{
     float: left;
     position: absolute;
-    top: 23px;
-    left: 720px;
+    top: 55px;
+    right: 10px;
     font-size: 10px;
+    text-align:right;
 }
 .mainAffils{
     font-size: 13px;
@@ -162,7 +165,7 @@ body{
 }
 .content{
     width: 1024px;
-    height: 1320px;
+    height: 1420px;
     margin: 0px 0px 0px 0px;
     position: relative;
     /*background-color: rgba(5, 119, 190,1);*/
@@ -182,7 +185,7 @@ body{
 .contentMiddle{
     position: absolute;
     width: 100%;
-    height: 300px;
+    height: 310px;
     background-color: rgba(255,175,25,0.4);
     /*background-color: rgba(29, 29, 116, 0.8);*/
     top:   400px;
@@ -190,18 +193,18 @@ body{
 .contentMiddle2{
     position: absolute;
     width: 100%;
-    height: 230px;
+    height: 270px;
     background-color: rgba(255,175,25,0.6);
     /*background-color: rgba(5, 119, 190,1);*/
-    top:   700px;
+    top:   710px;
 }
 .contentBottom{
     position: absolute;
     width: 100%;
-    height: 390px;
+    height: 440px;
     background-color: rgba(255,175,25,0.8);
     /*background-color:rgba(244,133,0,1);*//* rgb(7, 7, 47, 1);*/
-    top:   930px;
+    top:   980px;
 }
 
 .centerDrum{
@@ -303,9 +306,14 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
-    padding: 10px;
+    padding: 12px;
     z-index: 3;
     opacity: 1 !important;
+}
+.boxText > .icon{
+    width: 15px;
+    display: inline-block;
+    text-align: center;
 }
 .boxTitle{
     display: block;
@@ -318,6 +326,7 @@ body{
     color: rgb(255,100,17);
     font-size: 12px;
 }
+
 .contextSection{
     position: absolute;
     border-radius: 5%;
@@ -329,7 +338,7 @@ body{
     /*background: url(../images/Dave_King_\(drummer\)-4.jpg);*/
     /*background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);*/
 
-    background-color: rgba(255,100,17,0.9);
+    background-color: rgba(255,100,17,0.8);
     /*background-color: rgba(255,39,17,0.9);*/
     background-size: cover;
     font-size: 12px;
@@ -346,6 +355,7 @@ body{
     /*background: url(../images/question.jpg);*/
     background-size: cover;
     font-size: 30px;
+    text-align: center;
 }
 .solutionSection{
     position: absolute;
@@ -354,7 +364,7 @@ body{
     left: 700px;
     color: #FFFFFF;
     /*background-color: rgba(241,39,17,0.9);*/
-    background-color: rgba(255,100,17,0.9);
+    background-color: rgba(255,100,17,0.8);
     width: 300px;
     height: 310px;
     font-size: 12px;
@@ -392,23 +402,28 @@ body{
 .budgetSection{
     position: absolute;
     top: 710px;
-    left: 20px;
+    left: 0px;
     color: #FFFFFF;
-    width: 984px;
-    height: 20px;
+    width: 100%;
+    height: 40px;
     background-color: #FFFFFF;
-    font-size: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.budgetSection > div{
+    padding-top: 6px;
 }
 
 .budgetTitle{
     float:left;
-    width:60px;
+    width:20px;
     height: 100%;
     background-color: rgb(190, 150, 8);
+    vertical-align: middle;
 }
 .DevStaff{
     float:left;
-    width:calc(60% - 60px);
+    width:calc(50% - 20px);
     height: 100%;
     background-color: rgb(190, 50, 8);
 }
@@ -421,18 +436,18 @@ body{
 .ArtStaff{
     float:left;
     height: 100%;
-    width:10%;
+    width:15%;
     background-color: rgba(255,100,17,1);
 }
 .Hardware{
     float:left;
     height: 100%;
-    width:5%;
+    width:10%;
     background-color: rgba(255,170,70,1);
 }
 .timelineSection{
     position: absolute;
-    top: 740px;
+    top: 770px;
     left: 20px;
     color: #FFFFFF;
     width: 984px;
@@ -441,7 +456,7 @@ body{
 
 .methodologySection{
     position: absolute;
-    top: 930px;
+    top: 990px;
     left: 20px;
     color: #FFFFFF;
     width: 984px;
@@ -450,37 +465,37 @@ body{
 }
 .definitionsSection{
     position: absolute;
-    top: 1150px;
+    top: 1220px;
     left: 20px;
     /*color: rgb(250, 70, 0);*/
     color: #FFFFFF;
     text-shadow: 1px 1px rgb(7, 0, 73);
     width: 290px;
-    height: 150px;
+    height: 170px;
     background: url(../images/www.jpg);
     background-size: cover;
     border-radius: 5%;
 }
 .playerSection{
     position: absolute;
-    top: 1150px;
+    top: 1220px;
     left: 367px;
     background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
     color: #FFFFFF;
     width: 290px;
-    height: 150px;
+    height: 170px;
     background: url(../images/game-liike.png);
     background-size: cover;
     border-radius: 5%;
 }
 .multipadSection{
     position: absolute;
-    top: 1150px;
+    top: 1220px;
     left: 714px;
     background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
     color: #FFFFFF;
     width: 290px;
-    height: 150px;
+    height: 170px;
     background: url(../images/octapad.png);
     background-size: cover;
     border-radius: 5%;

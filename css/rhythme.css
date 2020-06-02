@@ -312,6 +312,7 @@ body{
     padding: 12px;
     z-index: 3;
     opacity: 1 !important;
+    color : #FFFFFF;
 }
 .boxText > .icon{
     width: 15px;
@@ -419,6 +420,18 @@ body{
 }
 .budgetSection > div{
     padding-top: 12px;
+}
+.videoContainer{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    color: #FFFFFF;
+    width: 984px;
+    height: 600px;
+    background-color: rgba(255, 187, 0, 0.8);
+    z-index: 2;
+    display: none;
+    padding: 20px;
 }
 
 .budgetTitle{

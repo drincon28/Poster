@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/rhythme.css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/360d273b9f.js" crossorigin="anonymous"></script>
+        <script src="js/rhythme.js"></script>
 	</head>
 	<body>
         <body>
@@ -35,8 +36,17 @@
                     </div>
                 </div>
                 <!--End Header-->
+
+                
                 <!--Content-->
                 <div class="content">
+                    <div class= "videoContainer" id="videoPractice">
+
+                        <video  width="984" controls>
+                            <source src="images/maqueta.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                      </div>
                     <div class="contentTop"></div>
                     <div class="contentMiddle"></div>
                     <div class="contentMiddle2"></div>
@@ -59,14 +69,15 @@
                         </div!-->
                     </div>
                     <div class= "problemSection box">
-                        <div class="boxText">
-                            <div class="boxTitle">Question</div>
-                            <br />
-                            How could we implement a free portal to support rhythmic musical learning?
-                        </div>
+                            <div class="boxText">
+                                <div class="boxTitle">Question</div>
+                                <br />
+                                How could we implement a free portal to support rhythmic musical learning?
+                            </div>
                     </div>
                     <div class= "solutionSection box">
-                        <div class="boxText">
+                        <a href="javascript:toggleVideo('videoPractice');">
+                            <div class="boxText">
                             <div class="boxTitle">Problem</div>
                             <br /><div class="icon"><i class="fas fa-chalkboard-teacher"></i></div> No training feedback without tutor
                             <br /><br /><div class="icon"><i class="fab fa-creative-commons-sampling"></i></div> No accessible technology
@@ -78,7 +89,8 @@
                             <!--br /><br />Tutors and their time are a limited resource, and the feedback they give the student is extremely important.-->
                         </div>
                         <img class="kidInTears" src="images/kid_in_tears.png" />
-                    </div>
+                    </a>
+                </div>
                     <div class= "objetiveMainSection box">
                         <div class="boxText">
                             <div class="boxTitle">Main Objective</div>

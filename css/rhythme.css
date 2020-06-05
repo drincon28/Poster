@@ -409,7 +409,7 @@ body{
 }
 .budgetSection{
     position: absolute;
-    top: 710px;
+    top: 930px;
     left: 0px;
     color: #FFFFFF;
     width: 100%;
@@ -420,6 +420,18 @@ body{
 }
 .budgetSection > div{
     padding-top: 12px;
+}
+.videoContainer{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    color: #FFFFFF;
+    width: 984px;
+    height: 600px;
+    background-color: rgba(255, 187, 0, 0.8);
+    z-index: 2;
+    display: none;
+    padding: 20px;
 }
 .videoContainer{
     position: absolute;
@@ -474,7 +486,7 @@ body{
 }
 .timelineSection{
     position: absolute;
-    top: 760px;
+    top: 980px;
     left: 00px;
     color: #FFFFFF;
     width: 1024px;
@@ -483,7 +495,7 @@ body{
 
 .methodologySection{
     position: absolute;
-    top: 980px;
+    top: 1200px;
     left: 00px;
     color: #FFFFFF;
     width: 1024px;
@@ -492,7 +504,7 @@ body{
 }
 .definitionsSection{
     position: absolute;
-    top: 1230px;
+    top: 735px;
     left: 20px;
     /*color: rgb(250, 70, 0);*/
     color: #FFFFFF;
@@ -505,7 +517,7 @@ body{
 }
 .playerSection{
     position: absolute;
-    top: 1230px;
+    top: 735px;
     left: 367px;
     background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
     color: #FFFFFF;
@@ -517,7 +529,7 @@ body{
 }
 .multipadSection{
     position: absolute;
-    top: 1230px;
+    top: 735px;
     left: 714px;
     background: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
     color: #FFFFFF;
